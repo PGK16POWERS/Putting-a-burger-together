@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/security_navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/security_navigation"
+    app:startDestination="@id/security_Login">
 
+    <fragment
+        android:id="@+id/security_Login"
+        android:name="com.example.pabt.Security_Login"
+        android:label="fragment_security__login"
+        tools:layout="@layout/fragment_security__login" />
+    <fragment
+        android:id="@+id/security_Create_Account"
+        android:name="com.example.pabt.Security_Create_Account"
+        android:label="fragment_security__create__account"
+        tools:layout="@layout/fragment_security__create__account" />
 </navigation>
